@@ -1,17 +1,36 @@
-import { Container } from "@/components/ui/Container";
+import { Hero } from "@/components/Hero";
+import { ValueProps } from "@/components/ValueProps";
+import { CategorySection } from "@/components/CategorySection";
+import { FeaturedResources } from "@/components/FeaturedResources";
+import { WhySection } from "@/components/WhySection";
+import { HowItWorks } from "@/components/HowItWorks";
+import { FinalCTA } from "@/components/FinalCTA";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 items-center justify-center py-20">
-      <Container size="sm" className="text-center space-y-3">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#FFFFFF]">
-          BuildWith<span className="text-[#EF4444]">Dhananjay</span>
-        </h1>
-        <p className="text-base text-[#A1A1AA]">
-          Your digital learning resources are coming soon.
-        </p>
-      </Container>
-    </div>
+    <>
+      {/* SECTION 1: HERO */}
+      <Hero />
+
+      {/* SECTION 2: VALUE PROPOSITION */}
+      <ValueProps />
+
+      {/* SECTION 3: CATEGORIES */}
+      <CategorySection />
+
+      {/* SECTION 4: FEATURED RESOURCES */}
+      <FeaturedResources />
+
+      {/* SECTION 5: WHY BUILDWITHDHANANJAY */}
+      <WhySection />
+
+      {/* SECTION 6: HOW IT WORKS */}
+      <HowItWorks />
+
+      {/* SECTION 7: FINAL CTA */}
+      <FinalCTA />
+    </>
   );
 }
+
 
